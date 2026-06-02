@@ -1,0 +1,405 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday Allen ❤️</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Quicksand',sans-serif;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+background:linear-gradient(180deg,#FFF8E8,#FFECEF,#F5F8FF);
+overflow-x:hidden;
+color:#444;
+}
+
+.hero{
+min-height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:30px;
+position:relative;
+}
+
+.snoopy{
+width:260px;
+animation:float 3s ease-in-out infinite;
+}
+
+@keyframes float{
+0%,100%{transform:translateY(0);}
+50%{transform:translateY(-15px);}
+}
+
+h1{
+font-size:3rem;
+color:#ff7295;
+margin-top:20px;
+}
+
+.subtitle{
+margin-top:15px;
+font-size:1.1rem;
+line-height:1.8;
+}
+
+.btn{
+margin-top:35px;
+padding:15px 32px;
+border:none;
+border-radius:999px;
+background:#ff7295;
+color:white;
+font-size:1rem;
+cursor:pointer;
+transition:.3s;
+}
+
+.btn:hover{
+transform:scale(1.05);
+}
+
+.section{
+padding:80px 20px;
+display:flex;
+justify-content:center;
+}
+
+.card{
+max-width:850px;
+background:white;
+padding:40px;
+border-radius:30px;
+box-shadow:0 10px 30px rgba(0,0,0,.08);
+text-align:center;
+}
+
+.card h2{
+margin-bottom:20px;
+color:#ff7295;
+}
+
+.card p{
+line-height:2;
+font-size:1.05rem;
+}
+
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:15px;
+margin-top:25px;
+}
+
+.gallery img{
+width:100%;
+height:280px;
+object-fit:cover;
+border-radius:20px;
+}
+
+footer{
+padding:40px;
+text-align:center;
+color:#777;
+}
+
+.hearts{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+pointer-events:none;
+overflow:hidden;
+z-index:-1;
+}
+
+.heart{
+position:absolute;
+font-size:20px;
+animation:fall linear infinite;
+opacity:.6;
+}
+
+@keyframes fall{
+from{
+transform:translateY(-100px);
+}
+to{
+transform:translateY(120vh);
+}
+}
+
+.date{
+margin-top:20px;
+font-weight:700;
+color:#ff7295;
+font-size:1.2rem;
+}
+
+.polaroid{
+background:white;
+padding:10px;
+border-radius:10px;
+box-shadow:0 8px 20px rgba(0,0,0,.1);
+}
+
+.final-text{
+font-size:1.2rem;
+font-weight:600;
+color:#ff7295;
+}
+</style>
+</head>
+<body>
+
+<audio id="bgMusic" loop>
+<source src="thankyou.mp3" type="audio/mpeg">
+</audio>
+
+<div class="hearts" id="hearts"></div>
+
+<section class="hero">
+
+<img
+class="snoopy"
+src="https://upload.wikimedia.org/wikipedia/en/5/53/Snoopy_Peanuts.png"
+alt="Snoopy">
+
+<h1>Happy Birthday Allen ❤️</h1>
+
+<div class="date">
+3 June 2026
+</div>
+
+<p class="subtitle">
+A little birthday gift from someone<br>
+who loves you very, very much.
+</p>
+
+<button class="btn" onclick="openLetter()">
+Open My Heart 💌
+</button>
+
+</section>
+
+<section class="section" id="letter">
+
+<div class="card">
+
+<h2>To Allen 🤍</h2>
+
+<p>
+Happy birthday, my love.
+<br><br>
+
+Miles between us, but you're still the closest thing to my heart.
+LDR is hard, but loving you never is.
+<br><br>
+
+Thank you for holding us down even when the distance gets heavy.
+For every good morning text, every late night call,
+and every "I wish you were here" that we turn into
+"we'll get there someday."
+<br><br>
+
+You make the waiting worth it.
+You make me believe that what we have is bigger than any timezone,
+any city, any screen between us.
+<br><br>
+
+I'm proud of us.
+I'm proud of you.
+And I can't wait for the day distance is just a word we used to know.
+<br><br>
+
+Until then, keep growing,
+keep dreaming,
+and keep being the amazing person I fell for.
+<br><br>
+
+I'll be here,
+loving you across the miles,
+every single day.
+<br><br>
+
+Happy birthday to my favorite person.
+<br><br>
+
+I love you more than the distance between us.
+Always.
+❤️
+</p>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<div class="card">
+
+<h2>Our Story 🐶✨</h2>
+
+<p>
+8 May 2026
+<br><br>
+
+The day "you and me"
+became "us."
+<br><br>
+
+Maybe we aren't in the same city.
+Maybe we can't always hold hands.
+<br><br>
+
+But somehow,
+you still became my safest place.
+<br><br>
+
+And that's my favorite thing about us.
+🤍
+</p>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<div class="card">
+
+<h2>Our Memories 📸</h2>
+
+<div class="gallery">
+
+<div class="polaroid">
+<img src="foto1.jpg">
+</div>
+
+<div class="polaroid">
+<img src="foto2.jpg">
+</div>
+
+<div class="polaroid">
+<img src="foto3.jpg">
+</div>
+
+</div>
+
+<p style="margin-top:20px">
+Replace these photos with our favorite memories.
+</p>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<div class="card">
+
+<h2>One Last Thing... 🌙</h2>
+
+<p>
+
+If Snoopy waited for Charlie Brown,
+then I can wait for you.
+<br><br>
+
+No matter how many kilometers separate us.
+No matter how many months we have to wait.
+<br><br>
+
+Because at the end of every plan,
+every dream,
+every version of my future...
+<br><br>
+
+I still hope it's you.
+<br><br>
+
+Happy Birthday, Allen.
+<br><br>
+
+See you in every tomorrow.
+🤍
+
+</p>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<div class="card">
+
+<p class="final-text">
+Thank you for loving me.
+<br>
+Thank you for choosing us.
+<br>
+Thank you for staying.
+<br><br>
+I love you.
+Forever and always.
+❤️
+</p>
+
+</div>
+
+</section>
+
+<footer>
+Made with love by your boyfriend ❤️
+</footer>
+
+<script>
+
+function openLetter(){
+document.getElementById('bgMusic').play();
+document.getElementById('letter').scrollIntoView({
+behavior:'smooth'
+});
+}
+
+const hearts=document.getElementById('hearts');
+
+for(let i=0;i<40;i++){
+
+const heart=document.createElement('div');
+
+heart.classList.add('heart');
+heart.innerHTML='❤️';
+
+heart.style.left=Math.random()*100+'%';
+heart.style.animationDuration=(Math.random()*6+5)+'s';
+heart.style.fontSize=(Math.random()*20+15)+'px';
+heart.style.opacity=Math.random();
+
+hearts.appendChild(heart);
+}
+
+</script>
+
+</body>
+</html>
+```
